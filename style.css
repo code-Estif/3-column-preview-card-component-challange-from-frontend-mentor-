@@ -12,14 +12,16 @@ body {
       border-radius: 16px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.08);
       padding: 48px 0;
-      max-width: 900px;
+      max-width: 850px;
       margin: 40px;
+      min-height: 100%;
       display: flex;
       justify-content: center;
     }
     .card-group {
       display: flex;
       gap: 0;
+      min-height: 100%;
     }
     .card {
       flex: 1;
@@ -70,24 +72,25 @@ body {
       border-radius: 24px;
       padding: 12px 32px;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: 600;
       cursor: pointer;
       transition: background 0.2s, color 0.2s;
       outline: none;
+      opacity: 0.7;
     }
     .card.sedans .btn {
-      color: #e38826;
+      color: #e68e31;
     }
     .card.suvs .btn {
-      color: #006970;
+      color: #008c96;
     }
     .card.luxury .btn {
-      color: #004241;
+      color: #007e7c;
     }
     .card .btn:hover {
       background: transparent;
       color: #fff;
-      border: 2px solid #fff;
+      border: 1px solid #fff;
     }
     @media (max-width: 375px) {
       .container {
